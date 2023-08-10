@@ -23,7 +23,7 @@ const juegosController = {
     },
     create:async (req, res) => {
         try{
-            const juegosCreated = await JuegosManager.creaet(req)
+            const juegosCreated = await JuegosManager.create(req)
             res.status(201).send('Juego Registrado')
         }catch (error){
             res.status(500).send('Error en el servidor')

@@ -19,7 +19,7 @@ const JuegosManager = {
          })
     },
 
-    updated: async (req, res) => {
+    update: async (req, res) => {
 
         const {id} = req.params
         const juegos = await juegoRepository.findByPk(id)
